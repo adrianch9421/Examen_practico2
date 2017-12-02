@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.adrianch.examen_practico2.Principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="100dp"
+            android:text="APPS MOVILES 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="110dp"
+            android:text="EXAMEN PRÁCTICO"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:paddingLeft="110dp"
+            android:text="2DA EVALUACIÓN PARCIAL"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="110dp"
+            android:text="ADRIAN CHAVIRA LÓPEZ"
+            android:textColor="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/vino" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingTop="13dp">
+
+            <Button
+                android:id="@+id/btncapturar"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="onClickCapturar"
+                android:text="CAPTURAR" />
+
+            <Button
+                android:id="@+id/btnmostrar"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="onClickMostrar"
+                android:text="MOSTAR" />
+
+            <Button
+                android:id="@+id/btnsalir"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="onClickSalir"
+                android:text="SALIR"
+                android:textColorLink="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

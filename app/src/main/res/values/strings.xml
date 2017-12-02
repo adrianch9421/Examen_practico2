@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Examen practico 2</string>
+    <string name="title_activity_datos">Agregar Restaurante</string>
+    <string name="title_activity_ListaRestaurantes">Lista de Restaurantes</string>
+</resources>
