@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
+        android:background="@drawable/tables"
         android:orientation="vertical">
 
         <TextView
@@ -19,11 +19,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="15dp"
             android:paddingLeft="100dp"
+            android:paddingStart="82dp"
             android:text="APPS MOVILES 1"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
@@ -33,9 +35,11 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:paddingLeft="110dp"
+            android:paddingStart="88dp"
             android:text="EXAMEN PRÁCTICO"
             android:textColor="@android:color/background_light"
-            android:textSize="18sp" />
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/textView3"
@@ -45,29 +49,20 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="17dp"
             android:paddingLeft="110dp"
+            android:paddingStart="90dp"
             android:text="2DA EVALUACIÓN PARCIAL"
             android:textColor="@android:color/background_light"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp"
-            android:paddingLeft="110dp"
-            android:text="ADRIAN CHAVIRA LÓPEZ"
-            android:textColor="@android:color/background_light" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             android:layout_below="@+id/textView4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
-            app:srcCompat="@drawable/vino" />
+            app:srcCompat="@drawable/menus" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,28 +76,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:layout_weight="1"
-                android:background="?attr/actionModeSplitBackground"
+                android:background="@android:color/holo_orange_dark"
                 android:onClick="onClickCapturar"
-                android:text="CAPTURAR" />
+                android:text="CAPTURAR"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnmostrar"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_dark"
+                android:background="@android:color/holo_orange_dark"
                 android:onClick="onClickMostrar"
-                android:text="MOSTAR" />
+                android:text="MOSTAR"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnsalir"
                 android:layout_width="match_parent"
                 android:layout_height="82dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_bright"
+                android:background="@android:color/holo_orange_dark"
                 android:onClick="onClickSalir"
                 android:text="SALIR"
-                android:textColorLink="@android:color/holo_blue_dark" />
+                android:textColorLink="@android:color/holo_blue_dark"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

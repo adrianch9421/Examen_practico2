@@ -89,6 +89,14 @@ public class Evaluacion extends AppCompatActivity {
 
         setResult(RESULT_OK, i);
 
+        
+        Intent intent=new Intent(Evaluacion.this,Principal.class);
+        Toast.makeText(getApplicationContext(), "Gracias por su valoración",Toast.LENGTH_SHORT).show();
+        startActivity(intent);
         finish();
+
+
     }
+
+
 }

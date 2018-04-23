@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/fondix3"
     android:orientation="vertical">
 
     <TextView
@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:text="DATOS"
         android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/black"
         android:textSize="30sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="27dp" />
 
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:text="Nombre:"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextNombre"
@@ -38,9 +41,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/background_light"
-        android:textColorLink="@android:color/background_light" />
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:textColorLink="@android:color/black" />
 
     <TextView
         android:id="@+id/textView7"
@@ -48,7 +51,8 @@
         android:layout_height="wrap_content"
         android:text="Descripciòn:"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextDescripcion"
@@ -56,8 +60,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
-        android:textColorLink="@android:color/background_light" />
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/black" />
 
     <TextView
         android:id="@+id/textView8"
@@ -65,7 +69,8 @@
         android:layout_height="wrap_content"
         android:text="Direcciòn y telefono:"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextDireccion"
@@ -73,16 +78,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
-        android:textColorLink="@android:color/background_light" />
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black" />
 
     <Button
         android:id="@+id/buttonGuardar"
         android:layout_width="288dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_orange_light"
         android:onClick="onClickGuardarRestaurante"
         android:text="GUARDAR"
+        android:textColorLink="@android:color/background_dark"
+        android:textStyle="bold"
         android:translationX="50dp" />
 
 </LinearLayout>

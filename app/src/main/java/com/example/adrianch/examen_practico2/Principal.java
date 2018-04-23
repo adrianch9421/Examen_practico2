@@ -26,7 +26,7 @@ public void onClickCapturar (View v){
 
     }
     public void onClickSalir (View v){
-    finish();
+    finishAffinity();
 
     }
 

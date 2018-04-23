@@ -24,6 +24,7 @@ public class datos extends AppCompatActivity {
     ImageButton imageButton;
     EditText editTextNombre, editTextDescripcion, editTextDireccion;
     String nombreRestaurant, descripcionRestaurant, direccionRestaurant, resultado;
+
     int imaRestaurant;
 
 
@@ -52,8 +53,8 @@ public class datos extends AppCompatActivity {
         direccionRestaurant = editTextDireccion.getText().toString();
         imaRestaurant = Integer.parseInt(resultado);
 
-    boolean sdDisponible = false;
-    boolean sdAccesoEscritura = false;
+        boolean sdDisponible = false;
+        boolean sdAccesoEscritura = false;
 
     String estado = Environment.getExternalStorageState();
 
@@ -83,9 +84,11 @@ public class datos extends AppCompatActivity {
 
     } catch (Exception ex){
         Log.e("Ficheros", "error msg");
+
     }
-
-
+        Intent intent =new Intent(datos.this,Principal.class);
+    startActivity(intent);
+        Toast.makeText(getApplicationContext(), "Restaurante agregado con exito",Toast.LENGTH_SHORT).show();
 
 
     }
